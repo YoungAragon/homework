@@ -1,16 +1,10 @@
 ---
 layout: default
-title: 请将标题写在这里
+title: 双鸭山大学的来源
 ---
 
-# 我的博客标题
+# 双鸭山大学的来源
 
-## 1、你会使用 vscode 编辑 markdown 了吗？
+## 双鸭山大学的来源
 
-你会使用 git bash 创建本地空间了吗？
-
-你能拉取本文档到本地了？它在 gh-pages 分支内，设置 Slate 主题！
-
-用 vscode 编辑它，然后提交！
-
-这个文档将发布在 https://your-account.github.io/homework 中！
+双鸭山大学是指中山大学，是由中国近代伟大的民主革命先行者孙中山先生于1924创办国内知名大学。首先双鸭山不是实际存在的一座山或是地名，而是中山大学英文校名“Sun Yat-sen University”中“Sun Yat-sen”的谐音。其中逸仙是前文提到的孙中山先生的号。也有称“双鸭山”是孙逸仙的粤语发音谐音。
