@@ -4,7 +4,7 @@ title: 我制作的第一个HTML5游戏经历
 ---
 
 # **总括**
-本文是我第一次制作HTML5游戏的大致过程，我所制作的是一个玩家通过发射子弹消灭怪物的游戏,也参考了[百度](https://www.scirra.com/tutorials/37/beginners-guide-to-construct-2/page-1)
+本文是我第一次制作HTML5游戏的大致过程，我所制作的是一个玩家通过发射子弹消灭怪物的游戏,也参考了[construct guide](https://www.scirra.com/tutorials/37/beginners-guide-to-construct-2/page-1)
 
 ---
 
@@ -33,7 +33,7 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 
 ---
 
-# **添加游戏对象
+# **添加游戏对象**
 在添加游戏对象之前我们必须新建一个图层，新建图层只需点击刚才锁定键旁边的加号即可。 这时候我们要开始插入对象啦，这个游戏的对象分别有玩家、怪物、子弹和爆炸。我们可以上网去搜索自己想要的造型。
 
 插入操作类似于刚才设置背景的操作：
