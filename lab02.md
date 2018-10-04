@@ -13,7 +13,7 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 
 ---
 
-# **背景的设置**
+# **背景的设置和锁定**
 首先在窗口左上角找到“文件”选项，点击并选择创建新的空项目。
 ![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-1.png)
 
@@ -22,3 +22,11 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 
 在选择插入后，鼠标的指针会变成十字形，此时只需在空白页上点击，便会跳出图片编辑框，点击上方第二个选项载入图片。
 ![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-3.png)
+
+点击关闭后可以看到你所选择的背景已经在页面上了，我通过手动拉取图片使其覆盖视图（ps：可通过ctrl+鼠标滚轮可以缩小或放大视图）。现在我们要添加更多对象。但是，我们会不小心选择平铺的背景，除非我们锁定它，使其无法选择。我们使用分层系统来做到这一点。现在我们把视角转换到窗口右上方选取layers.
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-4.png)
+
+并将其锁定
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-5.png)
+
+这样一来背景就被我们锁定无法选取了，当想要编辑或者更换背景时，在点击锁定按钮即可解锁。
