@@ -30,6 +30,3 @@ title: 与IT有关的书籍推荐
  总之这本书能是读者对计算机、互联网产业有一个全面的认识，能给予读者很多启发。
 
 ---
-
- 文章部分引用自[](https://baike.baidu.com/item/%E4%BF%9D%E7%BD%97%C2%B7%E6%A0%BC%E9%9B%B7%E5%8E%84%E5%A7%86/9902788?fr=aladdin)
- [](https://baike.baidu.com/item/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6/277142?fr=aladdin)
