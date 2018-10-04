@@ -39,8 +39,8 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 插入操作类似于刚才设置背景的操作：
 1、双击插入对象
 2、选择sprite对象
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-6.png)
 其他操作同上
 
 重复此过程将四个对象都插入，我们可以为四个对象命名以区别，方法是在右下角 右键点击对象，选择重命名即可。
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-7.png)
