@@ -95,3 +95,38 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 我们可以通过以下操作，让子弹从一个类似枪口的地方射出来，而不是从中间。
 ![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/%E6%93%8D%E4%BD%9C2.gif)
 如此设置后，再把刚刚的image point由0改为1。
+
+接下来继续插入事件
+条件: Bullet -> On collision with another object -> pick Monster.
+行为: Monster -> Destroy
+行为: Bullet -> Spawn another object -> Explosion, layer 1
+行为: Bullet -> Destroy
+这个事件解释起来很简单，就是当子弹和怪物相撞时消灭怪物并产生爆炸。
+
+我们可以让怪物变多变聪明，变多很简单，通过ctrl+拖动复制多个怪物
+变聪明就要再次插入事件了：
+条件: System -> On start of Layout
+行为: Monster -> Set angle -> random(360)
+
+---
+
+# **得分和抬头显示器**
+我们可以通过创建得分机制来记录自己的得分，这时要引入全局变量：
+在事件页面单机右键选择添加全局变量（global variable）并命名为得分或者score，其他均默认。完成后会发现出现在最上面
+![]()
+
+再插入以下事件：
+条件：monster -> on destroyed
+行为: system -> add 1 to score
+
+我们需要记录我们的得分。回到我们之前使用的图层栏。添加一个名为HUD的新图层。确保它位于顶部并选中。属性栏现在应该显示其属性。将Parallax属性设置为0,0（在X和Y轴上均为零）。
+![]()
+
+双击空格以插入另一个对象,这次选择Text对象。我们可以为其设置字体和颜色以便于我们查看。
+![]()
+
+最后切换回活动表在我们的第一个动作里添加一个行为Text -> Set text.输入"Score: " & Score。游戏大概就完成了。
+
+---
+
+# 补充和不足
