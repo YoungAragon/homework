@@ -59,10 +59,10 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 
 让我们将这些行为添加到需要它们的对象中，具体操作如下：
 首先为玩家添加8方向移动，我们要先在右下角的项目中选中玩家，并在左边的属性栏里面找到“Behaviors”，并进行以下操作：
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-8.png)
 
 再次执行相同操作，这次添加Scroll To行为，使屏幕跟随播放器，以Bound to layout 行为，以使它们保持在布局中。操作完得到如下结果：
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-9.png)
 
 同样的我们为其他对象添加行为：
 子弹：添加 Bullet movement 和 Destroy outside layout行为
@@ -71,7 +71,7 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 
 现在你可以试着点击窗口左上方的运行（run layout）按钮运行游戏，你会发现怪兽和子弹具有相同的移动速度，我们要对其进行“限速”。
 我们选中怪物对象，在属性栏里面有speed这一项目，将参数400修改为80，同样的我也可以采用相同的办法提高子弹的射速。
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-10.png)
 
 ---
 
