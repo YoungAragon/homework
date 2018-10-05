@@ -130,3 +130,16 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 ---
 
 # 补充和不足
+这里还有一些问题，比如怪物能不能不是打一次就死掉，动画的连贯性，以及怪物能不能自己产生，玩家的死亡。这里只补充后两点，毕竟后两点也决定了游戏的可玩性。这里参考了[新手指导](https://www.scirra.com/tutorials/37/beginners-guide-to-construct-2/page-7)
+可以添加行为来解决：
+>Condition: System -> Every X seconds -> 3
+Action: System -> Create object -> Monster, layer 1, 1400 (for X), random(1024) (for Y)
+ps:本事件的含义就是让系统每3s产生一个怪物项目在图层1里面
+>Condition: Monster -> On collision with another object -> Player
+Action: Player -> Destroy
+ps：本事件的含义就是当玩家与怪物相撞时消灭玩家。
+
+---
+
+# **总结**
+通过自己根据新手指导做自己的第一个小游戏，我发现游戏的运行就是项目在玩家指挥下运行事件。可能这个游戏还有很多不足，希望通过今后学习能做出更好的游戏。
