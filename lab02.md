@@ -90,4 +90,8 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 条件: Mouse -> On click -> Left clicked (默认)
 行为: Player -> Spawn another object -> 选择子弹
 这里要强调一下图层的选择（虽然我也不知道是怎么一回事）
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-12.png)
+
+我们可以通过以下操作，让子弹从一个类似枪口的地方射出来，而不是从中间。
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/%E6%93%8D%E4%BD%9C2.gif)
+如此设置后，再把刚刚的image point由0改为1。
