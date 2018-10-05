@@ -42,7 +42,7 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 ![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-6.png)
 其他操作同上
 
-重复此过程将四个对象都插入，我们可以为四个对象命名以区别，方法是在右下角 右键点击对象，选择重命名即可。
+重复此过程将四个对象都插入，我们可以为四个对象命名以区别，方法是在右下角 右键点击对象，选择重命名即可。注意还要添加鼠标和键盘对象，因为这个游戏需要鼠标和键盘输入，但是后二者不会再对象框里面显示出来。
 ![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-7.png)
 
 ---
@@ -76,3 +76,7 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 ---
 
 # **事件**
+我们还要通过定义一些事件来使游戏运行，最简单的当子弹与怪物相撞时消灭怪物等等。首先我们得找到事件表1
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-11.png)
+
+我们想让玩家总是看着鼠标。因此如果我们让每个刻度线都让玩家面向鼠标，它们将始终面向鼠标。具体操作如下
