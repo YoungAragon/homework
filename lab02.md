@@ -113,17 +113,17 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 # **得分和抬头显示器**
 我们可以通过创建得分机制来记录自己的得分，这时要引入全局变量：
 在事件页面单机右键选择添加全局变量（global variable）并命名为得分或者score，其他均默认。完成后会发现出现在最上面
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-13.png)
 
 再插入以下事件：
 条件：monster -> on destroyed
 行为: system -> add 1 to score
 
 我们需要记录我们的得分。回到我们之前使用的图层栏。添加一个名为HUD的新图层。确保它位于顶部并选中。属性栏现在应该显示其属性。将Parallax属性设置为0,0（在X和Y轴上均为零）。
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-14.png)
 
 双击空格以插入另一个对象,这次选择Text对象。我们可以为其设置字体和颜色以便于我们查看。
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-15.png)
 
 最后切换回活动表在我们的第一个动作里添加一个行为Text -> Set text.输入"Score: " & Score。游戏大概就完成了。
 
