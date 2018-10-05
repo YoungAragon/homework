@@ -81,3 +81,13 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 
 我们想让玩家总是看着鼠标。因此如果我们让每个刻度线都让玩家面向鼠标，它们将始终面向鼠标。具体操作如下
 ![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/%E6%93%8D%E4%BD%9C1.gif)
+
+我可以把刚才的操作简写为：
+添加条件 System -> Every tick
+添加行为 Player -> Set angle towards position -> X: Mouse.X, Y: Mouse.Y
+
+我们继续添加以下事件，这里就不一一图示了
+条件: Mouse -> On click -> Left clicked (默认)
+行为: Player -> Spawn another object -> 选择子弹
+这里要强调一下图层的选择（虽然我也不知道是怎么一回事）
+![]()
