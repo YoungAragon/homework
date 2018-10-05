@@ -80,3 +80,4 @@ Construct 2编辑器仅适用于Windows，我们能够使用Construct 2创造任
 ![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab2-11.png)
 
 我们想让玩家总是看着鼠标。因此如果我们让每个刻度线都让玩家面向鼠标，它们将始终面向鼠标。具体操作如下
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/%E6%93%8D%E4%BD%9C1.gif)
