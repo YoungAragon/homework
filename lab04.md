@@ -18,6 +18,6 @@ title: 图片在计算机里的表示
 # 颜色在计算机里的表示
 ## 硬件
 首先我们要认识到我们的显示器屏幕中存在很多的像素点，这可能单凭肉眼无法观察，你可以借助显微镜来观察这些像素点。下图是iPhoneX的屏幕显微图：
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab04-1.jpg)
 
 
