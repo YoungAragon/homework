@@ -38,4 +38,20 @@ questions and answers2：
 分析:第一个字节，前四位0001表示是直接获取操作数，0100代表的是LOD指令。第二个字节对应数值7，即本次获取的操作数。
 
 2、RAM的地址对应红色阴影部分：每一个地址存放一条指令或者数据。
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab07-1.png)
+
+3、根据地址的位数，该cpu是8位的
+
+4、int a = 3； int b = 7； int c； c = a + b;
+
+---
+
+# program 2
+questions and answers1:
+
+    1、用一句话总结程序的功能
+    2、写出对应的 c 语言程序
+
+1、改程序是将储存在X中的数据递减1直到减为零才停止运行。
+
+2、![]()
