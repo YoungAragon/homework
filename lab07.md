@@ -63,10 +63,13 @@ questions and answers2:
     3、用自己的语言，简单总结高级语言与机器语言的区别与联系。
 
 程序结果：
-![]()
 
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab07-3.png)
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab07-4.png)
 
 
 1、c语言利用循环语句每次增加递增一个循环变量,如第一次加0，第二次加1以此类推。
 
-2、
+2、计算过程如上图。
+
+3、高级语言比较通俗易懂，更接近于人类交流用用于，而机器语言则比较复杂，不容易记忆。并且机器计算要时刻注意上一次指令储存在ACC里面的数值。
