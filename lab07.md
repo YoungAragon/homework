@@ -54,4 +54,19 @@ questions and answers1:
 
 1、改程序是将储存在X中的数据递减1直到减为零才停止运行。
 
-2、![]()
+2、![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab07-2.png)
+
+questions and answers2:
+
+    1、写出 c 语言的计算过程
+    2、写出机器语言的计算过程
+    3、用自己的语言，简单总结高级语言与机器语言的区别与联系。
+
+程序结果：
+![]()
+
+
+
+1、c语言利用循环语句每次增加递增一个循环变量,如第一次加0，第二次加1以此类推。
+
+2、
