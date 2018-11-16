@@ -38,16 +38,16 @@ WHILE(water < water limit)
     get water
 WHILE(time < time limit)
     do nothing//steeping
-wash
+wash//洗涤
 WHILE(water > 0)
     drain away water
 WHILE(water < water limit)
     get water
-rinse
+rinse//漂洗
 WHILE(water > 0)
     drain away water
-tumble-dry
-make noise
+tumble-dry//甩干
+make noise//蜂鸣声
 END
 
 
