@@ -18,7 +18,7 @@ python提供了丰富的数学函数
 ![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab10-3.png)
 我们发现系统提示我们没有定义sin，所以还要添加一步用于添加基本符号的操作
 ```python
->>>form sympy import *
+>>>from sympy import *
 ```
 然后我们再来求极限
 ![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab10-4.png)
