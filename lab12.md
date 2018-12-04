@@ -7,7 +7,7 @@ layout: default
 ## 什么是风险投资
 风险投资（英语：Venture Capital，缩写为VC）简称风投，又译称为创业投资，是一种私募股权，一种融资形式，由公司或基金提供给被认为具有高增长潜力或已经表现出高增长的小型早期新兴公司（员工数量，年收入或两者兼而有之）。
 
-![]()
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab12-1.jpg)
 
 from：[wiki](https://zh.wikipedia.org/wiki/%E9%A3%8E%E9%99%A9%E6%8A%95%E8%B5%84)
 
@@ -20,5 +20,5 @@ from：[wiki](https://zh.wikipedia.org/wiki/%E9%A3%8E%E9%99%A9%E6%8A%95%E8%B5%84
 
 在收益上，越早投资的投资者（通常是天使投资者）收益越巨大。例如一开始投资Google的天使投资人，包括施瓦辛格，篮球明星奥尼尔（正是我上文说的单纯的有钱人），一开始都搞不清Google干啥就进行投资，但是在Google成功后，他们获得了巨大的收益。
 
-## 风投在中国的案例——阿里巴巴和孙正义
-![]()
+## 风投在中国的案例——马云和孙正义
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab12-2.jpg)
