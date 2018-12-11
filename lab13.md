@@ -109,7 +109,7 @@ int main(){
 		}
 	output();
 	}
-}
+}//自然后来功能多了后头部也会有相应改动！！
 ```
 
 * snakeMove函数
@@ -190,8 +190,8 @@ void snakeExtent (void) {
 
 # 小结
 本次实验学到了很多新东西，比如如何刷新屏幕，如何使用随机数。特别感谢以下博客对我的帮助
-[](https://blog.csdn.net/qq_40135006/article/details/78904825)
-[](https://blog.csdn.net/zhangweikun1998/article/details/78901988)
+(https://blog.csdn.net/qq_40135006/article/details/78904825)
+(https://blog.csdn.net/zhangweikun1998/article/details/78901988)
 
 好多思想都是从文章中学到的
 最后附上一张总代码
