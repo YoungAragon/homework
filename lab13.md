@@ -160,11 +160,11 @@ int gameover(void){
 ```c
 void put_money (void) {
 	//随机设置食物位置 
-	int moneyX = rand () % 11;
-	int moneyY = rand ()  % 11;
+	int foodX = rand () % 11;
+	int foodY = rand ()  % 11;
 	//判断位置是否为空 
-	if (map[moneyY][moneyX] == ' ') {
-		map[moneyY][moneyX]='$';
+	if (map[foodY][foodX] == ' ') {
+		map[foodY][foodX]=SNAKE_FOOD;
 	}
 	else	//不为空重新调用 
 		put_money ();		
