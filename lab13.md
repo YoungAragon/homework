@@ -53,6 +53,8 @@ char map[12][13] =
 int snakeX[SNAKE_MAX_LENGTH] = {5,4,3,2,1};//第一个元素对应蛇头 
 int snakeY[SNAKE_MAX_LENGTH] = {1,1,1,1,1};//蛇身子和蛇头坐标 
 int snakeLength = 5;//初始长度
+int foodX;
+int foodY;
 
 ```
 
@@ -160,14 +162,35 @@ int gameover(void){
 ```c
 void put_money (void) {
 	//随机设置食物位置 
-	int foodX = rand () % 11;
-	int foodY = rand ()  % 11;
-	//判断位置是否为空 
-	if (map[foodY][foodX] == ' ') {
+	foodX = rand () % 11;
+	foodY = rand ()  % 11;//食物的坐标已经被设置为外部变量。
+	if (map[foodY][foodX] == ' ') {//判断位置是否为空 
 		map[foodY][foodX]=SNAKE_FOOD;
 	}
 	else	//不为空重新调用 
 		put_money ();		
 }
 ```
+蛇身伸长：
+```c
+void snakeExtent (void) {
+	put_money ();//蛇吃到食物后重置食物位置
+	if (snakeLength < SNAKE_MAX_LENGTH) { //小于最长长度 
+		snakeY[snakeLength] = snakeY[snakeLength-1];
+		snakeX[snakeLength] = snakeX[snakeLength-1];
+		snakeLength ++ ;
+	} 
+	else 
+		map[snakeY[snakeLength-1]][snakeX[snakeLength-1]] = ' '; //大于最长长度 
+}
+```
+任务二完成！
 
+---
+
+# 小结
+本次实验学到了很多新东西，比如如何刷新屏幕，如何使用随机数。特别感谢以下博客对我的帮助
+[](https://blog.csdn.net/qq_40135006/article/details/78904825)
+[](https://blog.csdn.net/zhangweikun1998/article/details/78901988)
+
+好多思想都是从文章中学到的
