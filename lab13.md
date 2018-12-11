@@ -58,7 +58,7 @@ int snakeLength = 5;//初始长度
 
 * 这里补充一个打印图案的函数：
 ```c
-void PrintMap ()//打印图像的函数 
+void output ()//打印图像的函数 
 {
     int i=0;
     system("cls");//system(“cls”); 指令不断的清空屏幕上的内容，接下来的指令再进行反复地填充。
@@ -87,7 +87,7 @@ void PrintMap ()//打印图像的函数
 对应的c语言代码如下：
 ```c
 int main(){
-	PrintMap();
+	output();
 	char c;
 	while(1){
 		c = getchar();
@@ -105,7 +105,7 @@ int main(){
 				snakeMove (0, -1);
 				break;
 		}
-	PrintMap();
+	output();
 	}
 }
 ```
@@ -148,6 +148,26 @@ int gameover(void){
 				return 0;
 	}
 	return 1;
+}
+```
+
+
+2. snake 头吃到食物，snake就长一节
+
+分析：这包含了两个函数，一个是放置食物，一个是蛇身边长。
+
+首先是放置食物的函数：这里用了rand这个库函数。
+```c
+void put_money (void) {
+	//随机设置食物位置 
+	int moneyX = rand () % 11;
+	int moneyY = rand ()  % 11;
+	//判断位置是否为空 
+	if (map[moneyY][moneyX] == ' ') {
+		map[moneyY][moneyX]='$';
+	}
+	else	//不为空重新调用 
+		put_money ();		
 }
 ```
 
