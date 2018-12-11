@@ -194,3 +194,131 @@ void snakeExtent (void) {
 [](https://blog.csdn.net/zhangweikun1998/article/details/78901988)
 
 好多思想都是从文章中学到的
+最后附上一张总代码
+```c
+//字符版贪吃蛇
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define SNAKE_MAX_LENGTH 20
+#define SNAKE_HEAD 'H'
+#define SNAKE_BODY 'X'
+#define BLANK_CELL ' '
+#define SNAKE_FOOD '$'
+#define WALL_CELL '*'
+
+
+//snake stepping:dy = -1(up),+1(down);dx = -1(left),+1(right) 
+void snakeMove(int,int);
+void put_money(void);
+void output(void);
+int gameover(void);
+void snakeExtent (void);
+
+char map[12][13] = 
+	{"************",
+	"*XXXXH     *",
+	"*          *",
+	"*          *",
+	"*          *",
+	"*          *",
+	"*          *",
+	"*          *",
+	"*          *",
+	"*          *",
+	"*          *",
+	"************"};//地图 
+	
+int snakeX[SNAKE_MAX_LENGTH] = {5,4,3,2,1};//第一个元素对应蛇头 
+int snakeY[SNAKE_MAX_LENGTH] = {1,1,1,1,1};//蛇身子和蛇头坐标 
+int snakeLength = 5;//初始长度
+int foodX;
+int foodY;
+
+/****************************************************************/ //预处理
+
+void output ()//打印图像的函数 
+{
+    int i=0;
+    system("cls");//system(“cls”); 指令不断的清空屏幕上的内容，接下来的指令再进行反复地填充。
+    for ( i=0; i<12; i++ ) {
+        printf("%s\n", map[i]);
+    }
+}
+
+int main(){
+	put_money();
+	output();
+	char c;
+	while(gameover()){
+		c = getchar();
+		switch(c) {
+			case 'A': 
+				snakeMove (-1, 0);
+				break;
+			case 'S':
+				snakeMove (0, 1);
+				break;
+			case 'D':
+				snakeMove (1, 0);
+				break; 
+			case 'W':
+				snakeMove (0, -1);
+				break;
+		}
+	output();
+	}
+	return 0;
+}
+
+void snakeMove(int x,int y){
+	int i; 
+	if(snakeX[0] + x == foodX && snakeY[0] + y == foodY) 				//判断是否吃到食物 ,如是便使蛇伸长 
+		snakeExtent() ;						
+	else 
+		map[snakeY[snakeLength - 1]][snakeX[snakeLength - 1]] = ' ';	//如果没有吃到食物,把蛇的最后一段删除 
+	for(int i = snakeLength - 1; i > 0; i --) {								 
+		snakeX[i] = snakeX[i - 1];		
+		snakeY[i] = snakeY[i - 1];
+		map[snakeY[i]][snakeX[i]] = 'X';
+	}
+	snakeX[0] += x;
+	snakeY[0] += y;
+	map[snakeY[0]][snakeX[0]] = 'H';
+}
+
+int gameover(void){
+	if(snakeX[0] == 0||snakeX[0] == 12||snakeY[0] == 0||snakeY[0] == 12)	//碰到框架游戏结束 
+		return 0;
+
+	for(int i=1;i<snakeLength;i++) {
+		if(snakeX[0] == snakeX[i]&&snakeY[0]==snakeY[i])	//头碰到自己游戏结束 
+				return 0;
+	}
+	return 1;
+}
+
+void put_money (void) {
+	//随机设置食物位置 
+	foodX = rand () % 11;
+	foodY = rand ()  % 11;
+	//判断位置是否为空 
+	if (map[foodY][foodX] == ' ') {
+		map[foodY][foodX]=SNAKE_FOOD;
+	}
+	else	//不为空重新调用 
+		put_money ();		
+}
+
+void snakeExtent (void) {
+	put_money ();//蛇吃到食物后重置食物位置
+	if (snakeLength < SNAKE_MAX_LENGTH) { //小于最长长度 
+		snakeY[snakeLength] = snakeY[snakeLength-1];
+		snakeX[snakeLength] = snakeX[snakeLength-1];
+		snakeLength ++ ;
+	} 
+	else 
+		map[snakeY[snakeLength-1]][snakeX[snakeLength-1]] = ' '; //大于最长长度 
+}
+```
