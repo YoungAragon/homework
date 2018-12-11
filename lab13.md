@@ -130,7 +130,8 @@ void snakeMove(int x,int y){
 }
 ```
 从而完成任务一，效果如下：
-![](https://github.com/YoungAragon/swi-homework/blob/gh-pages/images/lab13/%E8%B4%AA%E5%90%83%E8%9B%871.gif)
+
+![](https://raw.githubusercontent.com/YoungAragon/swi-homework/gh-pages/images/lab13/%E8%B4%AA%E5%90%83%E8%9B%871.gif)
 
 ---
 
