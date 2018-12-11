@@ -136,3 +136,18 @@ void snakeMove(int x,int y){
 1. snake 头撞到身体、障碍（边界或你在地图中定义） 游戏结束
 
 分析：游戏结束有以下标准：一是蛇碰到墙壁（可以通过蛇头坐标与墙壁坐标重合来实现）。二是碰到身体（可以通过蛇头坐标和蛇身坐标重合来实现）。当满足二者之一的条件时结束主函数中的循环。
+
+C语言实现：
+```c
+int gameover(void){
+	if(snakeX[0] == 0||snakeX[0] == 12||snakeY[0] == 0||snakeY[0] == 12)	//碰到框架游戏结束 
+		return 0;
+
+	for(int i=1;i<snakeLength;i++) {
+		if(snakeX[0] == snakeX[i]&&snakeY[0]==snakeY[i])	//头碰到自己游戏结束 
+				return 0;
+	}
+	return 1;
+}
+```
+
