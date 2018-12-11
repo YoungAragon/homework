@@ -50,7 +50,7 @@ char map[12][13] =
 	"*          *",
 	"************"};//地图 
 	
-int snakeX[SNAKE_MAX_LENGTH] = {1,2,3,4,5};//第一个元素对应蛇头 
+int snakeX[SNAKE_MAX_LENGTH] = {5,4,3,2,1};//第一个元素对应蛇头 
 int snakeY[SNAKE_MAX_LENGTH] = {1,1,1,1,1};//蛇身子和蛇头坐标 
 int snakeLength = 5;//初始长度
 
@@ -115,17 +115,24 @@ int main(){
 分析：在考虑蛇身不变长的情况下，每一次移动则只需对蛇头坐标进行变换，蛇身坐标覆盖前一个蛇身（蛇头）的坐标，原来最后一个坐标的位置则使用空格代替。从而绘制出新的一张图案再次打印。具体代码如下：
 ```c
 void snakeMove(int x,int y){
-	map[snakeY[0]][snakeX[0]] = ' ';
-	for(int i = 0; i < snakeLength-1; i++) {								 
-		snakeX[i] = snakeX[i + 1];		
-		snakeY[i] = snakeY[i + 1];
+	map[snakeY[snakeLength-1]][snakeX[snakeLength-1]] = ' ';
+	for(int i = snakeLength - 1; i > 0; i --) {								 
+		snakeX[i] = snakeX[i - 1];		
+		snakeY[i] = snakeY[i - 1];
 		map[snakeY[i]][snakeX[i]] = 'X';
 	}
-	snakeX[snakeLength-1] += x;
-	snakeY[snakeLength-1] += y;
-	map[snakeY[snakeLength-1]][snakeX[snakeLength-1]] = 'H';
+	snakeX[0] += x;
+	snakeY[0] += y;
+	map[snakeY[0]][snakeX[0]] = 'H';
 }
 ```
 从而完成任务一，效果如下：
 ![](https://github.com/YoungAragon/swi-homework/blob/gh-pages/images/lab13/%E8%B4%AA%E5%90%83%E8%9B%871.gif)
 
+---
+
+### 任务2：会吃的蛇
+功能要求：
+1. snake 头撞到身体、障碍（边界或你在地图中定义） 游戏结束
+
+分析：游戏结束有以下标准：一是蛇碰到墙壁（可以通过蛇头坐标与墙壁坐标重合来实现）。二是碰到身体（可以通过蛇头坐标和蛇身坐标重合来实现）。当满足二者之一的条件时结束主函数中的循环。
