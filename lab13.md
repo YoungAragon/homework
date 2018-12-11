@@ -281,11 +281,11 @@ void snakeMove(int x,int y){
 	for(int i = snakeLength - 1; i > 0; i --) {								 
 		snakeX[i] = snakeX[i - 1];		
 		snakeY[i] = snakeY[i - 1];
-		map[snakeY[i]][snakeX[i]] = 'X';
+		map[snakeY[i]][snakeX[i]] = SNAKE_BODY;
 	}
 	snakeX[0] += x;
 	snakeY[0] += y;
-	map[snakeY[0]][snakeX[0]] = 'H';
+	map[snakeY[0]][snakeX[0]] = SNAKE_HEAD;
 }
 
 int gameover(void){
